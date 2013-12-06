@@ -1,3 +1,14 @@
 @import "packages/bourbon/bourbon";
 @import "packages/neat/neat";
 @import "settings/grid_settings";
+
+$section-padding: em(50);
+
+section#articles {
+	@include outer-container;
+
+	article {
+		@include span-columns(3);
+		@include omega(2n);
+	}
+}
