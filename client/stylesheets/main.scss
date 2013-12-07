@@ -1,14 +1,22 @@
 @import "packages/bourbon/bourbon";
 @import "packages/neat/neat";
 @import "settings/grid_settings";
+@import "vendor/bitters/bitters";
 
-$section-padding: em(50);
+body {
+	padding: em(20);
+	margin: 0;
+}
+
+h1 {
+	margin-bottom: em(10);
+}
 
 section#articles {
 	@include outer-container;
 
 	article {
-		@include span-columns(3);
-		@include omega(2n);
+		@include span-columns(6);
+		@include omega(1n);
 	}
 }
