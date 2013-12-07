@@ -16,7 +16,22 @@ section#articles {
 	@include outer-container;
 
 	article {
-		@include span-columns(2);
-		@include omega(5n);
+		
+		@include span-columns(1);
+
+		@include media($bp-medium) {
+			@include span-columns(1);
+			@include omega(2n);
+		}
+
+		@include media($bp-large) {
+			@include span-columns(1);
+			@include omega(3n);
+		}
+
+		@include media($bp-x-large) {
+			@include span-columns(1);
+			@include omega(4n);
+		}
 	}
 }
