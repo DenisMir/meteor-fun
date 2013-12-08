@@ -8,20 +8,22 @@ body {
 	margin: 0;
 }
 
-section {
-	padding: em(20);
-}
-
 header {
 	background-color: #ccc;
-	border-bottom: 1px solid #000;
+	border-bottom: em(1) solid #000;
 	padding: em(20);
 }
 
 section#articles {
 	@include outer-container;
+	margin-top: em(20);
 
 	article {
+
+		background-color: #ccc;
+		border: em(1) solid #000;
+		padding: em(20);
+		margin-bottom: em(20);
 
 		@include span-columns(1);
 
