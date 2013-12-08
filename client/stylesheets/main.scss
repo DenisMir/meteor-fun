@@ -20,16 +20,21 @@ footer {
 	padding: em(20);
 }
 
-section#articles {
+section {
 	@include outer-container;
 	margin-top: em(20);
+}
+
+article {
+	background-color: #ccc;
+	border: em(1) solid #000;
+	padding: em(20);
+	margin-bottom: em(20);
+}
+
+section#articles {
 
 	article {
-
-		background-color: #ccc;
-		border: em(1) solid #000;
-		padding: em(20);
-		margin-bottom: em(20);
 
 		@include span-columns(1);
 
@@ -49,18 +54,14 @@ section#articles {
 		}
 	}
 }
+section#article-content {
 
-article#detail-article {
-	@include outer-container;
+	article {
 
-	padding: em(20);
-	margin-top: em(20);
-	background-color: #ccc;
-	border: em(1) solid #000;
-
-	@include span-columns(1);
-
-	@include media($bp-medium) {
 		@include span-columns(1);
+
+		@include media($bp-medium) {
+			@include span-columns(1);
+		}
 	}
 }
