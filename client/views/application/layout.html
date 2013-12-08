@@ -3,4 +3,14 @@
 		<a href="{{pathFor 'articlesList'}}" title="&#187; have some fun with meteor &#171;"><h1>&#187; have some fun with meteor &#171;</h1></a>
 	</header>
 	{{yield}}
+	<footer>
+		{{#if currentUser}}
+			<p>Logged in as {{currentUser.profile.name}}. <a id="logout" href="#">Logout</a></p>
+		{{else}}
+			<ul>
+				<li id="login-google"><a href="#">Login with Google</a></li>
+				<li id="login-facebook"><a href="#">Login with Facebook</a></li>
+			</ul>
+		{{/if}}
+	</footer>
 </template>

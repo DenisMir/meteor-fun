@@ -14,6 +14,12 @@ header {
 	padding: em(20);
 }
 
+footer {
+	background-color: #ccc;
+	border-top: em(1) solid #000;
+	padding: em(20);
+}
+
 section#articles {
 	@include outer-container;
 	margin-top: em(20);

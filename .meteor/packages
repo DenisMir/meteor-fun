@@ -11,3 +11,6 @@ bourbon
 neat
 iron-router
 spin
+accounts-google
+accounts-facebook
+accounts-ui
