@@ -43,3 +43,16 @@ section#articles {
 		}
 	}
 }
+
+article#detail-article {
+	@include outer-container;
+	padding: em(20);
+
+	h2 {
+		@include span-columns(1);
+	}
+
+	p {
+		@include span-columns(1);
+	}
+}

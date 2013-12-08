@@ -3,6 +3,7 @@
     "scss": {},
     "bourbon": {},
     "neat": {},
-    "iron-router": {}
+    "iron-router": {},
+    "spin": {}
   }
 }
