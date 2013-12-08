@@ -1,1 +1,1 @@
-Meteor.subscribe('articles');
+Meteor.subscribe('allArticles');
