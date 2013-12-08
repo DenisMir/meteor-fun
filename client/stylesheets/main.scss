@@ -46,13 +46,15 @@ section#articles {
 
 article#detail-article {
 	@include outer-container;
+
 	padding: em(20);
+	margin-top: em(20);
+	background-color: #ccc;
+	border: em(1) solid #000;
 
-	h2 {
-		@include span-columns(1);
-	}
+	@include span-columns(1);
 
-	p {
+	@include media($bp-medium) {
 		@include span-columns(1);
 	}
 }

@@ -12,6 +12,9 @@ $visual-grid: false;
 $fg-column: $column;
 $fg-gutter: $gutter;
 
+// breakpoints general
+$bp-medium: new-breakpoint(min-width em(750) 2);
+
 // breakpoint setup landing page
 
 $bp-landing-medium: new-breakpoint(min-width em(750) max-width em(1349) 2);
