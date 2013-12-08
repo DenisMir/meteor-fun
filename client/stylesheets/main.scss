@@ -27,17 +27,17 @@ section#articles {
 
 		@include span-columns(1);
 
-		@include media($bp-medium) {
+		@include media($bp-landing-medium) {
 			@include span-columns(1);
 			@include omega(2n);
 		}
 
-		@include media($bp-large) {
+		@include media($bp-landing-large) {
 			@include span-columns(1);
 			@include omega(3n);
 		}
 
-		@include media($bp-x-large) {
+		@include media($bp-landing-x-large) {
 			@include span-columns(1);
 			@include omega(4n);
 		}
