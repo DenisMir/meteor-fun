@@ -4,19 +4,25 @@
 @import "vendor/bitters/bitters";
 
 body {
-	padding: em(20);
+	padding: 0;
 	margin: 0;
 }
 
-h1 {
-	margin-bottom: em(10);
+section {
+	padding: em(20);
+}
+
+header {
+	background-color: #ccc;
+	border-bottom: 1px solid #000;
+	padding: em(20);
 }
 
 section#articles {
 	@include outer-container;
 
 	article {
-		
+
 		@include span-columns(1);
 
 		@include media($bp-medium) {
