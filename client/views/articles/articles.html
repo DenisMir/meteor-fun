@@ -1,8 +1,8 @@
-<template name="articlesList">
+<template name="articles">
 	<section id="articles">
 		{{#if articles.count}}
 			{{#each articles}}
-				{{> articlesListItem}}
+				{{> articlesItem}}
 			{{/each}}
 		{{else}}
 			<div class="error">
