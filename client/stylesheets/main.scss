@@ -33,6 +33,11 @@ article {
 	margin-bottom: em(20);
 }
 
+div.error {
+	margin: em(20);
+	border: em(1) solid #000;
+}
+
 section#articles {
 
 	article {
