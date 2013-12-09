@@ -1,7 +1,13 @@
 <template name="articlesList">
 	<section id="articles">
-		{{#each articles}}
-			{{> articlesListItem}}
-		{{/each}}
+		{{#if articles.count}}
+			{{#each articles}}
+				{{> articlesListItem}}
+			{{/each}}
+		{{else}}
+			<div class="error">
+				<p>No articles found.</p>
+			</div>
+		{{/if}}
 	</section>
 </template>

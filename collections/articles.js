@@ -11,17 +11,22 @@ Meteor.methods({
 		var article = _.extend(_.pick(postAttributes, 'title', 'text'), {
 						userId: user._id,
 						author: user.profile.name,
-						date_created: new Date()
+						date_created: new Date().getTime()
 		});
 
 		var articleId = Articles.insert(article);
 
 		return articleId;
 	}
-})
+});
 
 Articles.allow({
-	insert: function(userId, doc) {
-		return  !! userId;
+	update: ownsDocument,
+	remove: ownsDocument
+});
+
+Articles.deny({
+	update: function (userId, article, fields) {
+		return (_.without(fields, 'title', 'text').length > 0);
 	}
 });

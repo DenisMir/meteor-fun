@@ -6,7 +6,8 @@
       "bourbon": {},
       "neat": {},
       "iron-router": {},
-      "spin": {}
+      "spin": {},
+      "moment": {}
     },
     "packages": {
       "scss": {
@@ -33,6 +34,11 @@
         "git": "https://github.com/SachaG/meteor-spin.git",
         "tag": "v0.2.0",
         "commit": "fd3a2871a69442848b4b4e74f5e1ae28fa4a95a4"
+      },
+      "moment": {
+        "git": "https://github.com/acreeger/meteor-moment.git",
+        "tag": "v2.2.1",
+        "commit": "9ee12e714afe56b189f53076447b7b54f3012065"
       }
     }
   }

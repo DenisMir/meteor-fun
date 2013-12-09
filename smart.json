@@ -4,6 +4,7 @@
     "bourbon": {},
     "neat": {},
     "iron-router": {},
-    "spin": {}
+    "spin": {},
+    "moment": {}
   }
 }

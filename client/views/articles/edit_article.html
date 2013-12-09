@@ -1,0 +1,17 @@
+<template name="editArticle">
+	<section id="edit-article">
+		<p>Just post an article right here.</p>
+
+		<form>
+			<p>
+				<label for="title">Title:</label>
+				<input type="text" name="title" id="title" placeholder="Your title get's right here." value="{{title}}">
+			</p>
+			<p>
+				<label for="text">Text:</label>
+				<textarea name="text" id="text" cols="30" rows="10" placeholder="Your message get's right here">{{text}}</textarea>
+			</p>
+			<input type="submit" value="Submit">
+		</form>
+	</section>
+</template>

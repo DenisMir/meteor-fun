@@ -2,8 +2,15 @@
 	<section id="article-content">
 		<article>
 			<h2>{{title}}</h2>
+			<h3>by <a href="#" rel="author">{{author}} at {{formatDate date_created 'short'}}</a></h3>
 			<p>{{text}}</p>
-			<a href="{{pathFor 'articlesList'}}">Back...</a>
+			<ul>
+				{{#if ownArticle}}
+					<li><a href="{{pathFor 'editArticle'}}">Edit article</a></li>
+					<li><a id="delete-article" href="#">Delete article</a></li>
+				{{/if}}
+				<li><a href="{{pathFor 'articlesList'}}">Back</a></li>
+			</ul>
 		</article>
 	</section>
 </template>
