@@ -22,7 +22,8 @@ footer {
 
 section {
 	@include outer-container;
-	margin-top: em(20);
+	margin: em(20);
+	margin-bottom: 0;
 }
 
 article {
