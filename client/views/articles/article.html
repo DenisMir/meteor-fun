@@ -3,7 +3,9 @@
 		<article>
 			<h2>{{title}}</h2>
 			<h3>by <a href="#" rel="author">{{author}} at {{formatDate date_created 'short'}}</a></h3>
-			<p>{{text}}</p>
+			<p>
+				{{#markdown}}{{text}}{{/markdown}}
+			</p>
 			<ul>
 				{{#if ownArticle}}
 					<li><a href="{{pathFor 'editArticle'}}">Edit article</a></li>
