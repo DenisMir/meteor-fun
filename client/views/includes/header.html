@@ -3,7 +3,7 @@
 		<a href="{{pathFor 'articles'}}" title="&#187; have some fun with meteor &#171;"><h1>&#187; have some fun with meteor &#171;</h1></a>
 			<nav>
 				<ul>
-					{{#if currentUser}}
+					{{#if isInRole 'author'}}
 						<li><a href="{{pathFor 'postArticle'}}">Add Article</a></li>
 					{{/if}}
 					<li><a href="{{pathFor 'viewport'}}">Show Viewport</a></li>

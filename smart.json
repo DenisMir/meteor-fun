@@ -5,6 +5,7 @@
     "neat": {},
     "iron-router": {},
     "spin": {},
-    "moment": {}
+    "moment": {},
+    "roles": {}
   }
 }

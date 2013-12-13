@@ -7,7 +7,8 @@
       "neat": {},
       "iron-router": {},
       "spin": {},
-      "moment": {}
+      "moment": {},
+      "roles": {}
     },
     "packages": {
       "scss": {
@@ -39,6 +40,11 @@
         "git": "https://github.com/acreeger/meteor-moment.git",
         "tag": "v2.2.1",
         "commit": "9ee12e714afe56b189f53076447b7b54f3012065"
+      },
+      "roles": {
+        "git": "https://github.com/alanning/meteor-roles.git",
+        "tag": "v1.2.2",
+        "commit": "3b2becad35c50aa2ace476663af65681243056fa"
       }
     }
   }

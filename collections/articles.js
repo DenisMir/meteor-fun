@@ -4,7 +4,7 @@ Meteor.methods({
 	'post-article': function(postAttributes) {
 		var user = Meteor.user();
 
-		if(!user) throw new Meteor.Error(401, "You need to be logged in.");
+		if(!isAuthor()) throw new Meteor.Error(401, "You need to be author to post.");
 		if(!postAttributes.title) throw new Meteor.Error(422, "The title is missing.");
 		if(!postAttributes.text) throw new Meteor.Error(422, 'The text is missing.');
 

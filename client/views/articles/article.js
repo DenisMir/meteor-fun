@@ -1,6 +1,6 @@
 Template.article.helpers({
 	ownArticle: function() {
-		return this.userId == Meteor.userId();
+		return (this.userId == Meteor.userId() || isAdmin());
 	}
 });
 
