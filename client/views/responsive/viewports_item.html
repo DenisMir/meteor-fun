@@ -2,6 +2,12 @@
 	<div class="viewport">
 		<h2>{{deviceName}}</h2>
 		<p><strong>By {{author}}, {{formatDateTimeAgo date_created}}</strong></p>
+		{{#if orientation}}
+			<p>Orientation: {{capitalize orientation}}</p>
+		{{/if}}
+		{{#if browser}}
+			<p>Browser: {{capitalize browser}}</p>
+		{{/if}}
 		<p>Comment: {{comment}}</p>
 		<p>User Agent: {{viewport.window.userAgent}}</p>
 		<p>Device Pixel Ratio: {{viewport.window.devicePixelRatio}}</p>

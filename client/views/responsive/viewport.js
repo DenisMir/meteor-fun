@@ -4,6 +4,8 @@ Template.viewport.events({
 		var viewport = {
 			deviceName: $(e.target).find('[name=deviceName]').val(),
 			comment: $(e.target).find('[name=comment]').val(),
+			orientation: $(e.target).find('[name=orientation]').val(),
+			browser: $(e.target).find('[name=browser]').val(),
 			viewport: Session.get("viewport")
 		};
 
