@@ -1,8 +1,14 @@
 <template name="viewports">
 	<section id="viewports">
 		<p>All the saved viewports.</p>
-		{{#each viewports}}
-			{{> viewportsItem}}
-		{{/each}}
+		{{#if viewports.count}}
+			{{#each viewports}}
+				{{> viewportsItem}}
+			{{/each}}
+		{{else}}
+			<div class="error">
+				<p>No viewports found.</p>
+			</div>
+		{{/if}}
 	</section>
 </template>
