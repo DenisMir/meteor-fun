@@ -12,5 +12,15 @@ Template.viewport.helpers({
 	documentElement: function() {
 		return {clientWidth: document.documentElement.clientWidth,
 				clientHeight: document.documentElement.clientHeight};
+	},
+	dim: function(){
+		return {
+			pyhsicalWidth: function() {
+				return window.devicePixelRatio * screen.width;
+			},
+			physicalHeight: function() {
+				return window.devicePixelRatio * screen.height;
+			}
+		}
 	}
 });
