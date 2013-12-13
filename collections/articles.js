@@ -1,6 +1,7 @@
 Articles = new Meteor.Collection("articles");
 
 Articles.allow({
+	insert: isAuthor,
 	update: ownsDocument,
 	remove: ownsDocument
 });
