@@ -45,6 +45,10 @@ article {
 	margin-bottom: em(20);
 }
 
+article:last-child {
+	margin-bottom: 0;
+}
+
 div.error {
 	margin: em(20);
 	border: em(1) solid #000;
