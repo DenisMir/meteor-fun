@@ -12,9 +12,17 @@
 		<p>Save the viewport data to the database. You can view all the saved viewports right here: <a href="{{pathFor 'viewports'}}">Viewports Overview</a></p>
 
 		<form>
+			{{#if currentUser}}
+				<label>Author</label>
+				<p>{{currentUser.profile.name}}</p>
+			{{else}}
+				<label for="author">Author Name</label>
+				<input type="text" placeholder="Enter your name" name="author" required>
+			{{/if}}
+
 			<p>
 				<label for="deviceName">Device Name</label>
-				<input type="text" placeholder="Enter the device name" name="deviceName" required>
+				<input type="text" placeholder="Enter device name or display name" name="deviceName" required>
 			</p>
 			<p>
 				<label for="browser">Browser</label>

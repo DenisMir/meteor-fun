@@ -6,6 +6,7 @@ Template.viewport.events({
 			comment: $(e.target).find('[name=comment]').val(),
 			orientation: $(e.target).find('[name=orientation]').val(),
 			browser: $(e.target).find('[name=browser]').val(),
+			author: $(e.target).find('[name=author]').val(),
 			viewport: Session.get("viewport")
 		};
 
