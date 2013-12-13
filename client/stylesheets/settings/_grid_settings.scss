@@ -13,6 +13,7 @@ $fg-column: $column;
 $fg-gutter: $gutter;
 
 // breakpoints general
+$bp-small: new-breakpoint(min-width em(560) 1);
 $bp-medium: new-breakpoint(min-width em(750) 2);
 
 // breakpoint setup landing page

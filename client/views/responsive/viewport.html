@@ -9,12 +9,12 @@
 		<p>Physical Dimensions: {{vp.dim.pyhsicalWidth}}/{{vp.dim.physicalHeight}}</p>
 
 		<h2>Save to database</h2>
-		<p>Save the data to the database.</p>
+		<p>Save the viewport data to the database. You can view all the saved viewports right here: <a href="{{pathFor 'viewports'}}">Viewports Overview</a></p>
 
 		<form>
 			<input type="text" placeholder="Device Name" name="deviceName" required>
 			<textarea name="comment" id="comment" cols="30" rows="10" placeholder="Comment (please tell us at least your correct not calculated physical pixel count)" required></textarea>
-			<input type="submit" value="Submit">
+			<input type="submit" value="Save viewport to databse">
 		</form>
 	</section>
 </template>

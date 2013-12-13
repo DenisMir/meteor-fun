@@ -9,17 +9,38 @@ body {
 }
 
 header {
+	h1 {
+		text-align: center;
+
+		@include media($bp-small) {
+			text-align: left;
+		}
+	}
+
 	background-color: #ccc;
 	border-bottom: em(1) solid #000;
 	padding: em(20);
 }
 
 nav {
+
+	margin-top: em(20);
+
 	li {
-		display: inline;
-		padding: 0 em(10);
-		border-right: em(1) solid #000;
+		text-align: center;
+		display: block;
+		padding: 0;
+		border-right: 0;
 		text-transform: uppercase;
+
+		@include media($bp-small) {
+			text-align: left;
+			display: inline;
+			padding: 0 em(10);
+			border-right: em(1) solid #000;
+			text-transform: uppercase;
+		}
+
 	}
 
 	li:last-child {
@@ -98,5 +119,10 @@ section#viewports {
 	div.viewport {
 		padding: em(20);
 		border: em(1) solid #000;
+		margin-bottom: em(20);
+	}
+
+	div.viewport:last-child {
+		margin-bottom: 0;
 	}
 }
