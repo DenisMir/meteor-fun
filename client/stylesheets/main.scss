@@ -14,6 +14,19 @@ header {
 	padding: em(20);
 }
 
+nav {
+	li {
+		display: inline;
+		padding: 0 em(10);
+		border-right: em(1) solid #000;
+		text-transform: uppercase;
+	}
+
+	li:last-child {
+		border-right: 0;
+	}
+}
+
 footer {
 	background-color: #ccc;
 	border-top: em(1) solid #000;
@@ -22,8 +35,7 @@ footer {
 
 section {
 	@include outer-container;
-	margin: em(20);
-	margin-bottom: 0;
+	padding: em(20);
 }
 
 article {
@@ -33,12 +45,18 @@ article {
 	margin-bottom: em(20);
 }
 
+article:last-child {
+	margin-bottom: 0;
+}
+
 div.error {
 	margin: em(20);
 	border: em(1) solid #000;
 }
 
 section#articles {
+
+	padding-bottom: 0;
 
 	article {
 
@@ -78,4 +96,11 @@ section#post-article {
 
 section#edit-article {
 	padding: em(20);
+}
+
+section#viewports {
+	div.viewport {
+		padding: em(20);
+		border: em(1) solid #000;
+	}
 }

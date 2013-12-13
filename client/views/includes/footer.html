@@ -2,11 +2,6 @@
 	<footer>
 		{{#if currentUser}}
 			<p>Logged in as {{currentUser.profile.name}}. <a id="logout" href="#">Logout</a></p>
-			<nav>
-				<ul>
-					<li><a href="{{pathFor 'postArticle'}}">Add Article</a></li>
-				</ul>
-			</nav>
 		{{else}}
 			<ul>
 				<li id="login-google"><a href="#">Login with Google</a></li>

@@ -1,0 +1,13 @@
+<template name="viewportsItem">
+	<div class="viewport">
+		<h2>{{deviceName}}</h2>
+		<p><strong>Author: {{author}}</strong></p>
+		<p>Comment: {{comment}}</p>
+		<p>User Agent: {{viewport.window.userAgent}}</p>
+		<p>Device Pixel Ratio: {{viewport.window.devicePixelRatio}}</p>
+		<p>Screen Width/Screen Height: {{viewport.screen.width}}/{{viewport.screen.height}}</p>
+		<p>Window innerWidth/innerHeight (visible viewport): {{viewport.window.innerWidth}}/{{viewport.window.innerHeight}}</p>
+		<p>clientWidth/clientHeight (layout viewport): {{viewport.documentElement.clientWidth}}/{{viewport.documentElement.clientHeight}}</p>
+		<p>Physical Dimensions: {{viewport.dim.pyhsicalWidth}}/{{viewport.dim.physicalHeight}}</p>
+	</div>
+</template>

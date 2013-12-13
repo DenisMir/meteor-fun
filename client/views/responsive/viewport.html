@@ -1,9 +1,20 @@
 <template name="viewport">
 	<section id="viewport">
-		<p>Device Pixel Ratio: {{window.devicePixelRatio}}</p>
-		<p>Screen Width/Screen Height: {{screen.width}}/{{screen.height}}</p>
-		<p>Window innerWidth/innerHeight (visible viewport): {{window.innerWidth}}/{{window.innerHeight}}</p>
-		<p>clientWidth/clientHeight (layout viewport): {{documentElement.clientWidth}}/{{documentElement.clientHeight}}</p>
-		<p>Physical Dimensions: {{dim.pyhsicalWidth}}/{{dim.physicalHeight}}</p>
+		<h2>Viewport Data</h2>
+		<p>User Agent: {{vp.window.userAgent}}</p>
+		<p>Device Pixel Ratio: {{vp.window.devicePixelRatio}}</p>
+		<p>Screen Width/Screen Height: {{vp.screen.width}}/{{vp.screen.height}}</p>
+		<p>Window innerWidth/innerHeight (visible viewport): {{vp.window.innerWidth}}/{{vp.window.innerHeight}}</p>
+		<p>clientWidth/clientHeight (layout viewport): {{vp.documentElement.clientWidth}}/{{vp.documentElement.clientHeight}}</p>
+		<p>Physical Dimensions: {{vp.dim.pyhsicalWidth}}/{{vp.dim.physicalHeight}}</p>
+
+		<h2>Save to database</h2>
+		<p>Save the data to the database.</p>
+
+		<form>
+			<input type="text" placeholder="Device Name" name="deviceName" required>
+			<textarea name="comment" id="comment" cols="30" rows="10" placeholder="Comment (please tell us at least your correct not calculated physical pixel count)" required></textarea>
+			<input type="submit" value="Submit">
+		</form>
 	</section>
 </template>
